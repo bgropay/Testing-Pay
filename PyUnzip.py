@@ -38,7 +38,7 @@ if so == "nt":
     # membersihkan layar terminal windows
     os.system("cls")
 elif so == "posix":
-    # membersihkan layar terminal windows
+    # membersihkan layar terminal linux
     os.system("clear")
 else:
     print(f"{m}[-] {p}Sistem operasi Anda tidak mendukung untuk menjalankan program PyUnzip :({r}")
