@@ -35,6 +35,7 @@ k = colorama.Fore.LIGHTYELLOW_EX # kuning
 c = colorama.Fore.LIGHTCYAN_EX   # cyan
 p = colorama.Fore.LIGHTWHITE_EX  # putih
 r = colorama.Fore.RESET          # reset
+bm = coloama.Back.LIGHTRED_EX    # background merah 
 
 # password untuk login
 password = "kunyuk is here"
@@ -83,17 +84,6 @@ elif so == "posix":
 else:
     print(f"{m}[-] {p}Sistem operasi Anda tidak mendukung untuk menjalankan program PyUnzip :({r}")
     exit(1)
-    
-# menampilkan banner
-print(f"""
-{p}--------------------------------------------------{r}
-{h}+                                                +{r}
-   {b}[*]           {p}Program: {k}pyunzip           {b}[*]{r}
-   {b}[*]            {p}Pembuat: {k}Ropay            {b}[*]{r}
-   {b}[*]  {p}Github: {k}github.com/bgropay/pyunzip  {b}[*]{r}
-{h}+                                                +{r}
-{p}--------------------------------------------------{r}
-""")
 
 # ************** INPUT FILE ZIP **************
 while True:
