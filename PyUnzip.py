@@ -84,7 +84,7 @@ else:
     print(f"{m}[-] {p}Sistem operasi Anda tidak mendukung untuk menjalankan program PyUnzip :({r}")
     exit(1)
     
-# Mlmenampilkan banner
+# menampilkan banner
 print(f"""
 {p}--------------------------------------------------{r}
 {h}+                                                +{r}
