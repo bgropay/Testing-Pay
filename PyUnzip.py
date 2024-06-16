@@ -16,8 +16,16 @@
 import os
 import time
 import getpass
-import colorama
-import pyzipper
+try:
+    import colorama
+except ImportError:
+    print("Terjadi kesalahan: Modul colorama belum terinstal. Instal dengan mengetikan perintah 'pip3 install colorama'.")
+    exit(1)
+try:
+    import pyzipper
+except ImportError:
+    print("Terjadi kesalahan: Modul pyzipper belum terinstal. Instal dengan mengetikan perintah 'pip3 install pyzipper'.")
+    exit(1)
 
 # mengubah output warna teks
 m = colorama.Fore.LIGHTRED_EX    # merah
@@ -34,9 +42,11 @@ password = "kunyuk is here"
 # mengecek jenis sistem operasi
 so = os.name
 
+# sistem operasi windows 
 if so == "nt":
     # membersihkan layar terminal windows
     os.system("cls")
+# sistem operasi linux
 elif so == "posix":
     # membersihkan layar terminal linux
     os.system("clear")
@@ -59,9 +69,21 @@ while True:
         print(f"\n{m}[-] {p}Keluar...{k}:({r}")
         exit(1)
 
-# membersihkan layar terminal
-os.system("clear")
+# mengecek jenis sistem operasi
+so = os.name
 
+# sistem operasi windows 
+if so == "nt":
+    # membersihkan layar terminal windows
+    os.system("cls")
+# sistem operasi linux
+elif so == "posix":
+    # membersihkan layar terminal linux
+    os.system("clear")
+else:
+    print(f"{m}[-] {p}Sistem operasi Anda tidak mendukung untuk menjalankan program PyUnzip :({r}")
+    exit(1)
+    
 # Mlmenampilkan banner
 print(f"""
 {p}--------------------------------------------------{r}
