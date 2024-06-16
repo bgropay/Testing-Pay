@@ -35,7 +35,7 @@ k = colorama.Fore.LIGHTYELLOW_EX # kuning
 c = colorama.Fore.LIGHTCYAN_EX   # cyan
 p = colorama.Fore.LIGHTWHITE_EX  # putih
 r = colorama.Fore.RESET          # reset
-bm = coloama.Back.LIGHTRED_EX    # background merah 
+bm = colorama.Back.LIGHTRED_EX    # background merah 
 
 # password untuk login
 password = "kunyuk is here"
